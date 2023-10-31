@@ -1,0 +1,1160 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta name="viewport" content="width=device-width,initial_scale=1"> 
+  <meta charset="UTF-8"> 
+ <style type="text/css" id="dcoder_stylesheet">@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  font-family:'Roboto',sans-serif;
+}
+header{
+  padding:5px 5px;
+  
+  
+  top:0;
+  left:0;
+  right:0;
+ z-index:999;
+  position:fixed;
+  height:3em;
+}
+.navbar{
+  display:flex;
+  margin:0px;
+  align-items:center;
+  justify-content:space-evenly;
+  top:0;
+  left:0;
+  right:0;
+  position:fixed;
+  z-index:999;
+  background:#fccccf;
+  height:3em;
+  box-shadow:0 0 5px 5px orangered;
+}
+nav ul{
+  display:flex;
+  
+  list-style:none;
+}
+nav a{
+  text-decoration:none;
+  font-size:.7em;
+  color:black;
+  font-weight:400;
+  margin:2px;
+  transition:all 1s ease-in;
+}
+nav a:hover{
+  font-size:.8em;
+  font-weight:500;
+  color:orangered;
+}
+.logo{
+  color:orangered;
+  font-size:1.5em;
+  left:10px;
+  font-weight:600;
+  letter-spacing:3px;
+  font-family:'Playfair Display',serif;
+}
+.About{
+  
+  background-color:#ffeeff;
+  height:auto;
+  max-width:device-width;
+  justify-content:center;
+  align-items:center;
+  transition:all 1s ease-in;
+  align-content:center;
+  clip-path:polygon(0 0,100% 0, 100% 90%, 70% 80%, 0 90%);
+}
+.containerB{
+  display:grid;
+  grid-template-rows:repeat(2,1fr);
+  grid-template-columns:repeat(1,1fr);
+  grid-gap:2em 2em;
+  margin:5%;
+  padding:25%;
+  
+  background-color:#ffeeff;
+}
+
+.circle{
+   
+  
+  box-shadow:0px 0px 3px 3px orangered;
+  height:150px;
+  width:150px;
+  border-radius:50%;
+  background:url("https://media.licdn.com/dms/image/C5603AQHVQSF999k1sQ/profile-displayphoto-shrink_800_800/0/1662270594021?e=2147483647&v=beta&t=97nbIGMyk9sTbV4JLluv34PbXZ72zrBgl58PdKwabYQ");
+}
+.data{
+  margin-bottom:1.5em;
+  
+}
+.data h3{
+  text-align:center;
+  color:orangered;
+  font-size:2em;
+  font-weight:600;
+}
+.data h5{
+  color:orange;
+  font-size:1em;
+  font-weight:400;
+}
+.data ul{
+  font-size:0.8em;
+  font-weight:300;
+}
+.Skills{
+  background-color:white;
+  transition:all 1s ease-in;
+  max-width:device-width;
+  position:;
+  padding:1em;
+}
+.Services{
+  background-color:#feeeef;
+  height:auto;
+  max-width:device-width;
+  position:relative;
+ padding:1em;
+ transition:all 1s ease-in;
+}
+.containerA{
+
+  margin:1em;
+  background-color:white;
+}
+.container{
+  display:grid;
+  grid-template-rows:repeat(4,1fr);
+  grid-template-columns:repeat(auto,1fr);
+  grid-gap:1em 1em;
+  margin:1em;
+  background-color:#feeeef;
+}
+.card{
+  border:1em solid orangered;
+  position:relative;
+  justify-content:center;
+  padding:.2em;
+  font-size:.1em;
+  background:white;
+  height:25vh;
+  border-radius:.5em;
+}
+.cardcent{
+  text-align:center;
+  text-decoration:bold;
+  font-size:5em;
+  color:orangered;
+}
+.card h3{
+  text-align:center;
+  text-decoration:bold;
+  font-size:2em;
+  color:black;
+}
+.card img{
+  
+  height:5vh;
+  width:5vh;
+  top:-10em;
+  left:42.5%;
+  position:absolute;
+  justify-content:center;
+  align-items:center;
+}
+.heads{
+  text-shadow:hsla(0%,0%,0%,50%);
+  text-align:center;
+  font-size:2em;
+  font-weight:600;
+  letter-spacing:.01em;
+  font-family:'Roboto Slab',serif;
+}
+.heads1{
+  text-shadow:hsla(0%,0%,0%,50%);
+  text-align:center;
+  font-size:1.5em;
+  font-weight:600;
+  color:orangered;
+  letter-spacing:.01em;
+}
+.Contact{
+  background:#fccccf;
+   height:auto;
+  max-width:device-width;
+  position:relative;
+ padding:1em;
+ transition:all 1s ease-in;
+}
+.containerAB{
+  
+  margin:1em;
+  background-color:#fccccf;
+}
+.box{
+  display:flex;
+  margin:.3em;
+  align-items:center;
+}
+.box img{
+  height:5vh;
+  width:5vh;
+  border-radius:.2em;
+}
+.box a{
+  text-decoration:none;
+  color:black;
+  font-size:.9em;
+  cursor:pointer;
+  font-weight:400;
+}
+.box a:hover{
+  color:orangered;
+  font-size:1.2em;
+  font-weight:500;
+}
+.barvi{
+   border-collapse:collapse;
+  border:.2em solid orangered;
+  margin:.2em;
+  border-radius:3px;
+  background-color:orangered;
+}
+
+.cole{
+   border-collapse:collapse;
+  border:.2em groove orangered;
+  text-align:center;
+  width:100%;
+  font-size:.6em;
+  font-weight:800;
+  color:orangered;
+  background-color:#fffffb;
+  
+}
+.dasvi{
+  border-collapse:collapse;
+  border:.2em solid orangered;
+  margin:.2em;
+  border-radius:5%;
+  background-color:#ffcfa8;
+}
+
+.col{
+   border-collapse:collapse;
+  border:.2em groove orangered;
+  text-align:center;
+  width:100%;
+  font-size:.6em;
+  font-weight:800;
+  color:orangered;
+  background-color:#fffffb;
+  
+}
+.storing{
+  background:#faaaaf;
+  color:#dd0000;
+}
+.storage{
+  background:#faafaa;
+  color:#dd0000;
+}
+.store{
+  background:#eaaeaa;
+  color:#dd0000;
+}
+.heads2{
+  color:orangered;
+  text-align:center;
+}
+
+
+
+
+ 
+
+@media only screen and (min-width:768px){
+*{
+  
+  margin:0;
+  padding:0;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  background-color:;
+  font-family:'Roboto',sans-serif;
+}
+header{
+  padding:15px 15px;
+  
+  
+  top:0;
+  left:0;
+  right:0;
+ z-index:999;
+  position:fixed;
+  height:auto;
+}
+.navbar{
+  display:flex;
+  margin:0px;
+  align-items:center;
+  justify-content:space-between;
+  top:0;
+  left:0;
+  right:0;
+  position:fixed;
+  z-index:999;
+  background:#fccccf;
+  height:7em;
+  box-shadow:0 0 5px 5px orangered;
+}
+nav ul{
+  display:flex;
+  
+  list-style:none;
+}
+nav a{
+  text-decoration:none;
+  font-size:2em;
+  color:black;
+  font-weight:800;
+  margin:10px;
+  transition:all 1s ease-in;
+}
+nav a:hover{
+  font-size:2.5em;
+  font-weight:1000;
+  color:orangered;
+}
+.logo{
+  color:orangered;
+  font-size:4em;
+  left:20px;
+  font-weight:1000;
+  letter-spacing:5px;
+  font-family:'Playfair Display',serif;
+}
+.About{
+  
+  background-color:#ffeeff;
+  height:auto;
+  max-width:device-width;
+  justify-content:center;
+  align-items:center;
+  padding:5%;
+  transition:all 1s ease-in;
+  align-content:center;
+  clip-path:polygon(0 0,100% 0, 100% 90%, 70% 80%, 0 90%);
+}
+.containerB{
+  display:grid;
+  grid-template-rows:repeat(2,1fr);
+  grid-template-columns:repeat(1,1fr);
+  grid-gap:2em 2em;
+  margin:;
+  padding:;
+  background-color:#ffeeff;
+}
+
+.circle{
+  box-shadow:0px 0px 10px 10px orange;
+  height:400px;
+  width:400px;
+  border-radius:50%;
+  background:url("https://media.licdn.com/dms/image/C5603AQHVQSF999k1sQ/profile-displayphoto-shrink_800_800/0/1662270594021?e=2147483647&v=beta&t=97nbIGMyk9sTbV4JLluv34PbXZ72zrBgl58PdKwabYQ");
+}
+  .data{
+  margin-bottom:1em;
+  
+}
+.data h3{
+  text-align:center;
+  color:orangered;
+  font-size:4em;
+  font-weight:1000;
+}
+.data h5{
+  color:orange;
+  font-size:2em;
+  font-weight:600;
+}
+.data ul{
+  font-size:0.8em;
+  font-weight:500;
+}
+.Skills{
+  background-color:white;
+  transition:all 1s ease-in;
+  max-width:device-width;
+  position:;
+  padding:2em;
+}
+.Skills h5{
+  font-size:2em;
+}
+.Services{
+  background-color:#feeeef;
+  height:auto;
+  transition:all 1s ease-in;
+  max-width:device-width;
+  position:relative;
+  padding:2em;
+}
+.containerA{
+  margin:2em;
+  background-color:white;
+}
+.container{
+  display:grid;
+  grid-template-rows:repeat(4,1fr);
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:2em 2em;
+  margin:2em;
+  background-color:#feeeef;
+}
+.card{
+  border:.2em solid orangered;
+  position:relative;
+  justify-content:center;
+  padding:.1em;
+  font-size:2em;
+  background:white;
+  height:auto;
+  border-radius:.5em;
+  margin:2em 0;
+}
+.cardcent{
+  text-align:center;
+  text-decoration:bold;
+  font-size:2em;
+  color:orangered;
+}
+.card h3{
+  text-align:center;
+  text-decoration:bold;
+  font-size:1em;
+  color:black;
+}
+.card img{
+  
+  height:5em;
+  width:5em;
+  top:-2.5em;
+  left:30%;
+  position:absolute;
+  justify-content:center;
+  align-items:center;
+}
+.heads{
+  text-shadow:hsla(0%,0%,0%,50%);
+  text-align:center;
+  font-size:3.3em;
+  font-weight:800;
+  letter-spacing:.1em;
+  font-family:'Roboto Slab',serif;
+}
+.heads1{
+  text-shadow:hsla(0%,0%,0%,50%);
+  text-align:center;
+  font-size:3em;
+  font-weight:700;
+  color:orangered;
+  letter-spacing:.1em;
+}
+.Contact{
+  background:#fccccf;
+  height:auto;
+  transition:all 1s ease-in;
+  max-width:device-width;
+  position:relative;
+  padding:2em;
+}
+.containerAB{
+  
+  margin:2em;
+  background-color:#fccccf;
+}
+.box{
+  display:flex;
+  margin:.6em;
+  align-items:center;
+}
+.box img{
+  height:5em;
+  width:5em;
+  border-radius:.5em;
+}
+.box a{
+  text-decoration:none;
+  color:black;
+  font-size:2.2em;
+  cursor:pointer;
+  font-weight:500;
+}
+.box a:hover{
+  color:orangered;
+  font-size:2.5em;
+  font-weight:700;
+}
+.barvi{
+   border-collapse:collapse;
+  border:.5em solid orangered;
+  margin:.5em;
+  border-radius:5%;
+  background-color:orangered;
+}
+
+.cole{
+   border-collapse:collapse;
+  border:.2em groove orangered;
+  text-align:center;
+  width:100%;
+  font-size:1em;
+  font-weight:800;
+  color:orangered;
+  background-color:#fffffb;
+  
+}
+.dasvi{
+  border-collapse:collapse;
+  border:.5em solid orangered;
+  margin:.5em;
+  border-radius:5%;
+  background-color:#ffcfa8;
+}
+
+.col{
+   border-collapse:collapse;
+  border:.2em groove orangered;
+  text-align:center;
+  width:100%;
+  font-size:1em;
+  font-weight:800;
+  color:orangered;
+  background-color:#fffffb;
+  
+}
+.storing{
+  background:#faaaaf;
+  color:#dd0000;
+}
+.storage{
+  background:#faafaa;
+  color:#dd0000;
+}
+.store{
+  background:#eaaeaa;
+  color:#dd0000;
+}
+.heads2{
+  color:orangered;
+  text-align:center;
+}
+
+.heads2{
+  font-size:1.5em;
+  color:orangered;
+  text-align:center;
+}
+
+}
+
+@media only screen and (min-width:1000px){
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  font-family:'Roboto',sans-serif;
+}
+header{
+  padding:15px 15px;
+  
+  
+  top:0;
+  left:0;
+  right:0;
+ z-index:999;
+  position:fixed;
+  height:auto;
+}
+.navbar{
+  display:flex;
+  margin:0px;
+  align-items:center;
+  justify-content:space-between;
+  top:0;
+  left:0;
+  right:0;
+  position:fixed;
+  z-index:999;
+  background:#fccccf;
+  height:6em;
+  box-shadow:0 0 5px 5px orangered;
+}
+nav ul{
+  display:flex;
+  
+  list-style:none;
+}
+nav a{
+  text-decoration:none;
+  font-size:2em;
+  color:black;
+  font-weight:800;
+  margin:10px;
+  transition:all 1s ease-in;
+}
+nav a:hover{
+  font-size:2.5em;
+  font-weight:1000;
+  color:orangered;
+}
+.logo{
+  color:orangered;
+  font-size:4em;
+  left:20px;
+  font-weight:1000;
+  letter-spacing:5px;
+  font-family:'Playfair Display',serif;
+}
+.About{
+  
+  background-color:#ffeeff;
+  height:auto;
+  max-width:device-width;
+  justify-content:center;
+  align-items:center;
+  padding:30%;
+  transition:all 1s ease-in;
+  align-content:center;
+  clip-path:polygon(0 0,100% 0, 100% 90%, 70% 80%, 0 90%);
+}
+.containerB{
+  display:grid;
+  grid-template-rows:repeat(2,1fr);
+  grid-template-columns:repeat(1,1fr);
+  grid-gap:5em 5em;
+  margin:;
+  padding:;
+  background-color:#ffeeff;
+}
+
+.circle{
+  box-shadow:0px 0px 10px 10px orange;
+  height:400px;
+  width:400px;
+  border-radius:50%;
+  background:url("https://media.licdn.com/dms/image/C5603AQHVQSF999k1sQ/profile-displayphoto-shrink_800_800/0/1662270594021?e=2147483647&v=beta&t=97nbIGMyk9sTbV4JLluv34PbXZ72zrBgl58PdKwabYQ");
+}
+.data{
+  margin-bottom:1em;
+  
+}
+.data h3{
+  text-align:center;
+  color:orangered;
+  font-size:4em;
+  font-weight:1000;
+}
+.data h5{
+  color:orange;
+  font-size:2.3em;
+  font-weight:600;
+}
+.data ul{
+  font-size:1.1em;
+  font-weight:500;
+}
+.Skills{
+  background-color:white;
+  transition:all 1s ease-in;
+  max-width:device-width;
+  position:;
+  padding:5em;
+}
+.Skills h5{
+  font-size:2em;
+}
+.Services{
+  background-color:#feeeef;
+  height:auto;
+  transition:all 1s ease-in;
+  max-width:device-width;
+  position:relative;
+  padding:2em;
+}
+.containerA{
+  margin:2em;
+  background-color:white;
+}
+.container{
+  display:grid;
+  grid-template-rows:repeat(4,1fr);
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:2em 2em;
+  margin:2em;
+  background-color:#feeeef;
+}
+.card{
+  border:.2em solid orangered;
+  position:relative;
+  justify-content:center;
+  padding:.1em;
+  font-size:2em;
+  background:white;
+  height:auto;
+  border-radius:.5em;
+  margin:2em 0;
+}
+.cardcent{
+  text-align:center;
+  text-decoration:bold;
+  font-size:5em;
+  color:orangered;
+}
+.card h3{
+  text-align:center;
+  text-decoration:bold;
+  font-size:2em;
+  color:black;
+}
+.card img{
+  
+  height:5em;
+  width:5em;
+  top:-2.5em;
+  left:30%;
+  position:absolute;
+  justify-content:center;
+  align-items:center;
+}
+.heads{
+  text-shadow:hsla(0%,0%,0%,50%);
+  text-align:center;
+  font-size:3.3em;
+  font-weight:800;
+  letter-spacing:.1em;
+  font-family:'Roboto Slab',serif;
+}
+.heads1{
+  text-shadow:hsla(0%,0%,0%,50%);
+  text-align:center;
+  font-size:3em;
+  font-weight:700;
+  color:orangered;
+  letter-spacing:.1em;
+}
+.Contact{
+  background:#fccccf;
+  height:auto;
+  transition:all 1s ease-in;
+  max-width:device-width;
+  position:relative;
+  padding:2em;
+}
+.containerAB{
+  
+  margin:2em;
+  background-color:#fccccf;
+}
+.box{
+  display:flex;
+  margin:.6em;
+  align-items:center;
+}
+.box img{
+  height:5em;
+  width:5em;
+  border-radius:.5em;
+}
+.box a{
+  text-decoration:none;
+  color:black;
+  font-size:2.2em;
+  cursor:pointer;
+  font-weight:500;
+}
+.box a:hover{
+  color:orangered;
+  font-size:2.5em;
+  font-weight:700;
+}
+.barvi{
+   border-collapse:collapse;
+  border:.5em solid orangered;
+  margin:.5em;
+  border-radius:5%;
+  background-color:orangered;
+}
+
+.cole{
+   border-collapse:collapse;
+  border:.2em groove orangered;
+  text-align:center;
+  width:100%;
+  font-size:1em;
+  font-weight:800;
+  color:orangered;
+  background-color:#fffffb;
+  
+}
+.dasvi{
+  border-collapse:collapse;
+  border:.5em solid orangered;
+  margin:.5em;
+  border-radius:5%;
+  background-color:#ffcfa8;
+}
+
+.col{
+   border-collapse:collapse;
+  border:.2em groove orangered;
+  text-align:center;
+  width:100%;
+  font-size:1em;
+  font-weight:800;
+  color:orangered;
+  background-color:#fffffb;
+  
+}
+.storing{
+  background:#faaaaf;
+  color:#dd0000;
+}
+.storage{
+  background:#faafaa;
+  color:#dd0000;
+}
+.store{
+  background:#eaaeaa;
+  color:#dd0000;
+}
+.heads2{
+  color:orangered;
+  text-align:center;
+}
+.heads2{
+  font-size:1.5em;
+  color:orangered;
+  text-align:center;
+}
+}</style></head> 
+ <body> 
+  <header> 
+   <div class="navbar" id="navbar"> 
+    <div class="logo">
+      Burnick 
+    </div> 
+    <nav> 
+     <ul> 
+      <li><a href="#About">Home</a></li> 
+      <li><a href="#Services">Skills</a></li> 
+      <li><a href="#Skills">Qualifications</a></li> 
+      <li><a href="#Contact">Contact</a></li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </header> 
+  <section class="About" id="About"> 
+   <div class="containerB"> 
+    <div class="circle"></div> 
+    <div class="data"> 
+     <h3>Who am I?</h3> 
+     <h5>I am Prachi Singh , A Tech Student.</h5> 
+     <ul> 
+      <li>Complete 10th and 12th Boards from UP</li> 
+      <li>Start Graduation in July 2020</li>
+      <li> from Jayoti Vidyapeeth Women's University Jaipur</li> 
+      <li>B.tech CSE 4th Year</li> 
+      <li>I am from Budaun Uttar Pradesh ,Living in Jaipur</li>
+      <li>Technology Lover</li> 
+     </ul> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="Skills" id="Skills"> 
+   <h2 class="heads">Qualifications</h2> 
+   <div class="containerA"> 
+    <div class="ten"> 
+     <h5>10th Boards</h5> 
+     <table class="dasvi"> 
+      <tbody> 
+       <tr class="storing"> 
+        <td class="col storing" colspan="5">10th Marksheet</td> 
+       </tr> 
+       <tr class="storage"> 
+        <td class="col storage">Subject</td> 
+        <td class="col storage">Marks(Theory)</td> 
+        <td class="col storage">Marks(Practical)</td> 
+        <td class="col storage">Total </td> 
+        <td class="col storage">Grade</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Hindi Core</td> 
+        <td class="col">058</td> 
+        <td class="col">030</td> 
+        <td class="col">088</td> 
+        <td class="col">A2</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Maths</td> 
+        <td class="col">060</td> 
+        <td class="col">030</td> 
+        <td class="col">090</td> 
+        <td class="col">A2</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Science</td> 
+        <td class="col">052</td> 
+        <td class="col">030</td> 
+        <td class="col">082</td> 
+        <td class="col">A2</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Social Science</td> 
+        <td class="col">053</td> 
+        <td class="col">030</td> 
+        <td class="col">083</td> 
+        <td class="col">A2</td> 
+       </tr> 
+       <tr> 
+        <td class="col">English</td> 
+        <td class="col">048</td> 
+        <td class="col">030</td> 
+        <td class="col">078</td> 
+        <td class="col">B1</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Drawing</td> 
+        <td class="col">035</td> 
+        <td class="col">030</td> 
+        <td class="col">065</td> 
+        <td class="col">B2</td> 
+       </tr> 
+       <tr class="store"> 
+        <td class="col store" colspan="4">Grand total</td> 
+        <td class="col store">486/600</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+    <div class="twelve"> 
+     <h5>12th Boards</h5> <tb></tb> 
+     <table class="barvi"> 
+      <tbody> 
+       <tr class="storing"> 
+        <td class="cole storing" colspan="5">12th Marksheet</td> 
+       </tr> 
+       <tr class="storage"> 
+        <td class="cole storage">Subject</td> 
+        <td class="cole storage">Marks(Theory)</td> 
+        <td class="cole storage">Marks(Practical)</td> 
+        <td class="cole storage">Total </td> 
+        <td class="cole storage">Grade</td> 
+       </tr> 
+       <tr> 
+        <td class="cole">Hindi Core</td> 
+        <td class="cole">075</td> 
+        <td class="cole">0</td> 
+        <td class="cole">75</td> 
+        <td class="cole">A</td> 
+       </tr> 
+       <tr> 
+        <td class="cole">Maths</td> 
+        <td class="cole">070</td> 
+        <td class="cole">0</td> 
+        <td class="cole">70</td> 
+        <td class="cole">A</td> 
+       </tr> 
+       <tr> 
+        <td class="cole">Physics</td> 
+        <td class="cole">034</td> 
+        <td class="cole">30</td> 
+        <td class="cole">064</td> 
+        <td class="cole">B</td> 
+       </tr> 
+       <tr> 
+        <td class="cole">Chemistry</td> 
+        <td class="cole">53</td> 
+        <td class="cole">30</td> 
+        <td class="cole">83</td> 
+        <td class="cole">A</td> 
+       </tr> 
+       <tr> 
+        <td class="cole">English</td> 
+        <td class="cole">065</td> 
+        <td class="cole">0</td> 
+        <td class="cole">65</td> 
+        <td class="cole">B+</td> 
+       </tr> 
+       <tr> 
+        <td class="cole">Physical Education</td> 
+        <td class="cole">040</td> 
+        <td class="cole">028</td> 
+        <td class="cole">068</td> 
+        <td class="cole">A+</td> 
+       </tr> 
+       <tr class="store"> 
+        <td class="cole store" colspan="4">Grand total</td> 
+        <td class="cole store">425/500</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+    <div class="ten"> 
+     <h5>B.Tech 1 SEM</h5> 
+     <table class="dasvi"> 
+      <tbody> 
+       <tr class="storing"> 
+        <td class="col storing" colspan="5">1 SEM Marksheet</td> 
+       </tr> 
+       <tr class="storage"> 
+        <td class="col storage">Subject</td> 
+        <td class="col storage">Marks(Theory)</td> 
+        <td class="col storage">Marks(Practical)</td> 
+        <td class="col storage">Total </td> 
+        <td class="col storage">Grade</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Chemistry</td> 
+        <td class="col">80</td> 
+        <td class="col">40</td> 
+        <td class="col">120</td> 
+        <td class="col">A</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Maths</td> 
+        <td class="col">72</td> 
+        <td class="col">0</td> 
+        <td class="col">72</td> 
+        <td class="col">B</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Physics</td> 
+        <td class="col">70</td> 
+        <td class="col">38</td> 
+        <td class="col">100</td> 
+        <td class="col">A</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Fundamental of Computer</td> 
+        <td class="col">79</td> 
+        <td class="col">43</td> 
+        <td class="col">122</td> 
+        <td class="col">A</td> 
+       </tr> 
+       <tr> 
+        <td class="col">Soft Skills</td> 
+        <td class="col">48</td> 
+        <td class="col">29</td> 
+        <td class="col">77</td> 
+        <td class="col">B</td> 
+       </tr> 
+       <tr> 
+        <td class="col">extra activity</td> 
+        <td class="col">49</td> 
+        <td class="col">49</td> 
+        <td class="col">98</td> 
+        <td class="col">A+</td> 
+       </tr>
+        <tr class="store"> 
+        <td class="col store" colspan="4">Grand total</td> 
+        <td class="col store">422/550</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="Services" id="Services"> 
+   <h2 class="heads">Skills</h2> 
+   <div class="container"> 
+    <div class="card"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlWkibXFdfUB7h7FmKLmgwxe-__BdMPGNGDA&amp;usqp=CAU"> 
+     <br> 
+     <br> 
+     <br> 
+     <h4 class="cardcent">Java</h4> 
+     <h3>I am just a begginer in Java.</h3> 
+     <h3>I started learning Java for upskill myself in Coding and Learn what is app development and how it works also for the understanding in the Object Oriented programming Concepts. As the number of Java programmers goes up, the capabilities of the &gt;average programmer will approach that of the Java programmers. And even for those how don't improve their programming, of course I prefer them to write in Java than in C or C++ </h3> 
+    </div> 
+    <div class="card"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw8-7J6BAJzxWZGifBI4BUGIikVuHhx2FBWQ&amp;usqp=CAU"> 
+     <br> 
+     <br> 
+     <br> 
+     <h4 class="cardcent">HTML</h4> 
+     <h3>I have a strong command in HTML.</h3> 
+     <h3>HTML is a fun language and very easy to understand.</h3> 
+    </div> 
+    <div class="card"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ooLA59TQ107iyOYmkwUzVZJKRisuExlTGQ&amp;usqp=CAU"> 
+     <br> 
+     <br> 
+     <br> 
+     <h4 class="cardcent">C-language</h4> 
+     <h3>I have a Better Understanding in C-language</h3> 
+     <h3>C-language is the first language that i learn and it really helps me to understand the working of the programming languages.</h3> 
+    </div> 
+    <div class="card"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8WHiflZyXffrnb_rsoHv9OSZuNrC9kbyLg&amp;usqp=CAU"> 
+     <br> 
+     <br> 
+     <br> 
+     <h4 class="cardcent">CSS</h4> 
+     <h3>I known CSS Moderately</h3> 
+     <h3>Learning CSS is fun and I enjoyed a lot playing with various features provided for better designing makes me amazed.</h3> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="Contact" id="Contact"> 
+   <h2 class="heads1">Contact Me!</h2> 
+   <div class="containerAB"> 
+    <div class="box"> 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png"> <a href="">Linked in</a> 
+    </div> 
+    <div class="box"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5-IegBwRWKFvBRzdCAh4NKbWWVIQV8KODYg&amp;usqp=CAU"> <a href="">Github</a> 
+    </div> 
+    <div class="box"> 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR1rbCLawQeRxqjEmwvfRDQ6rP9kILrNbzyw&amp;usqp=CAU"> <a href="">prachitomer4567@gmail.com</a> 
+    </div> 
+    <div class="box"> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"> <a href="">singhprachi86</a> 
+     </div> 
+     <div class="box"> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"> <a href="">Thakur Prachi Singh</a> 
+     </div> 
+     <div class="box"> 
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/631/small/whatsapp-logo-whatsapp-logo-transparent-whatsapp-icon-transparent-free-free-png.png"> <a href="">Thakur Prachi Singh-@contact number--12345..</a> 
+     </div>
+     <div class="box"> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"> <a href="">Prachi Singh-1234..</a> 
+     </div>
+   </div> 
+   <h4 class="heads2">Copyright © | Prachi Singh</h4> 
+  </section> 
+ 
+</body></html>
